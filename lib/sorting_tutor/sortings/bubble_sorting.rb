@@ -14,6 +14,8 @@ module SortingTutor
               sorted = false
               list_to_sort[index], list_to_sort[index + 1] = list_to_sort[index + 1], list_to_sort[index]
             end
+
+            SortingTutor.log_frame(list_to_sort)
           end
         end
 

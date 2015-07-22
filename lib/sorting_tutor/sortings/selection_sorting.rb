@@ -16,6 +16,8 @@ module SortingTutor
           if min_index != i
             list_to_sort[i], list_to_sort[min_index] = list_to_sort[min_index], list_to_sort[i]
           end
+
+          SortingTutor.log_frame(list_to_sort)
         end
 
         list_to_sort

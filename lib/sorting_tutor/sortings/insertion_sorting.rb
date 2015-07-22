@@ -10,6 +10,7 @@ module SortingTutor
               list_to_sort.insert(inner_index, list_to_sort[index])
               list_to_sort.delete_at(index + 1)
             end
+            SortingTutor.log_frame(list_to_sort)
           end
         end
 

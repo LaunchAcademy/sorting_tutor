@@ -15,6 +15,10 @@ module SortingTutor
       @frame_logger ||= SortingTutor::FrameLogger.new
     end
 
+    def log_frame(array)
+      frame_logger.log(array)
+    end
+
     def flush_frame_logger!
       @frame_logger = SortingTutor::FrameLogger.new
     end
