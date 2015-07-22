@@ -8,6 +8,7 @@ require "sorting_tutor/sortings/selection_sorting"
 require "sorting_tutor/sortings/insertion_sorting"
 require "sorting_tutor/sortings/bubble_sorting"
 
+require "sorting_tutor/displays/colored_diff"
 require "sorting_tutor/command_line_interface"
 
 module SortingTutor
@@ -16,8 +17,8 @@ module SortingTutor
       @frame_logger ||= SortingTutor::FrameLogger.new
     end
 
-    def log_frame(array)
-      frame_logger.log(array)
+    def log_frame(array, changed_indicies)
+      frame_logger.log(array, changed_indicies)
     end
 
     def flush_frame_logger!
