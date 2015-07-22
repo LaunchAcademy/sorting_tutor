@@ -8,6 +8,7 @@ require "sorting_tutor/sortings/selection_sorting"
 require "sorting_tutor/sortings/insertion_sorting"
 require "sorting_tutor/sortings/bubble_sorting"
 
+require "sorting_tutor/command_line_interface"
 
 module SortingTutor
   class << self
