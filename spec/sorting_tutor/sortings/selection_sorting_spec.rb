@@ -1,8 +1,9 @@
 require 'spec_helper'
 
-describe SortingTutor::InsertionSorting do
+describe SortingTutor::Sortings::SelectionSorting do
   it 'sorts a list of numbers' do
     numbers = [5,4,7,3,8,10,9]
     expect(described_class.new(numbers).sort).to eq(numbers.sort)
   end
 end
+
