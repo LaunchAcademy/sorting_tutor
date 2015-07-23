@@ -13,11 +13,11 @@ module SortingTutor
         mod_log = @frame_log.dup
         mod_log.each_with_index do |frame, index|
           if frame.changed?
-            frame[frame.changed_indicies[0]] = set_color(frame[frame.changed_indicies[0]], :green)
-            frame[frame.changed_indicies[1]] = set_color(frame[frame.changed_indicies[1]], :red)
+            frame[frame.changed_indices[0]] = set_color(frame[frame.changed_indices[0]], :green)
+            frame[frame.changed_indices[1]] = set_color(frame[frame.changed_indices[1]], :red)
           end
 
-          frame.compared_indicies.each do |index|
+          frame.compared_indices.each do |index|
             frame[index] = set_color(frame[index], :bold)
           end
 

@@ -16,13 +16,13 @@ module SortingTutor
           end
 
           #swap the smallest one into the i position
-          changed_indicies = []
+          changed_indices = []
           if min_index != i
             list_to_sort[i], list_to_sort[min_index] = list_to_sort[min_index], list_to_sort[i]
-            changed_indicies = [i, min_index]
+            changed_indices = [i, min_index]
           end
 
-          SortingTutor.log_frame(list_to_sort, changed_indicies, [i, min_index])
+          SortingTutor.log_frame(list_to_sort, changed_indices, [i, min_index])
         end
 
         list_to_sort

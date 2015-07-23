@@ -7,8 +7,8 @@ module SortingTutor
       @frames = []
     end
 
-    def log(frame, changed_indicies, indicies_compared)
-      @frames << Frame.new(frame, changed_indicies, indicies_compared)
+    def log(frame, changed_indices, indices_compared)
+      @frames << Frame.new(frame, changed_indices, indices_compared)
     end
 
     def each(&block)

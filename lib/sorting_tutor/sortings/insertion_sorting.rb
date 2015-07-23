@@ -7,13 +7,13 @@ module SortingTutor
         SortingTutor.log_frame(list_to_sort)
         (1..list_to_sort.length-1).each do |index|
           (0..(index - 1)).each do |inner_index|
-            changed_indicies = []
+            changed_indices = []
             if list_to_sort[inner_index] >= list_to_sort[index]
               list_to_sort.insert(inner_index, list_to_sort[index])
               list_to_sort.delete_at(index + 1)
-              changed_indicies = [inner_index, index]
+              changed_indices = [inner_index, index]
             end
-            SortingTutor.log_frame(list_to_sort, changed_indicies, [index, inner_index])
+            SortingTutor.log_frame(list_to_sort, changed_indices, [index, inner_index])
           end
         end
 

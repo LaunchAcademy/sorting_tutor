@@ -1,14 +1,14 @@
 module SortingTutor
   class Frame < Array
-    attr_reader :changed_indicies, :compared_indicies
-    def initialize(array, changed_indicies, compared_indicies)
+    attr_reader :changed_indices, :compared_indices
+    def initialize(array, changed_indices, compared_indices)
       super(array)
-      @changed_indicies = changed_indicies
-      @compared_indicies = compared_indicies
+      @changed_indices = changed_indices
+      @compared_indices = compared_indices
     end
 
     def changed?
-      !@changed_indicies.empty?
+      !@changed_indices.empty?
     end
   end
 end
