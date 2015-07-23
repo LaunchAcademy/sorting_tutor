@@ -17,8 +17,8 @@ module SortingTutor
       @frame_logger ||= SortingTutor::FrameLogger.new
     end
 
-    def log_frame(array, changed_indicies)
-      frame_logger.log(array, changed_indicies)
+    def log_frame(array, changed_indicies = [], indicies_compared = [])
+      frame_logger.log(array, changed_indicies, indicies_compared)
     end
 
     def flush_frame_logger!

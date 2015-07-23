@@ -9,7 +9,7 @@ module SortingTutor
         until sorted
           sorted = true
 
-          SortingTutor.log_frame(list_to_sort, [])
+          SortingTutor.log_frame(list_to_sort)
           (0..(list_to_sort.length - 2)).each do |index|
             changed_indicies = []
             if list_to_sort[index] > list_to_sort[index + 1]
@@ -18,7 +18,7 @@ module SortingTutor
               list_to_sort[index], list_to_sort[index + 1] = list_to_sort[index + 1], list_to_sort[index]
             end
 
-            SortingTutor.log_frame(list_to_sort, changed_indicies)
+            SortingTutor.log_frame(list_to_sort, changed_indicies, [index, index + 1])
           end
         end
 

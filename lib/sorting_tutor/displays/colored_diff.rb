@@ -17,6 +17,10 @@ module SortingTutor
             frame[frame.changed_indicies[1]] = set_color(frame[frame.changed_indicies[1]], :red)
           end
 
+          frame.compared_indicies.each do |index|
+            frame[index] = set_color(frame[index], :bold)
+          end
+
           frame_label = (index + 1).to_s
           frame_label = "Frame " + frame_label + ":" + " " * (3 - frame_label.length)
           say(frame_label, :yellow, false)
